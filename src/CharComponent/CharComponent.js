@@ -9,7 +9,11 @@ const CharComponent = props => {
 		textAlign: "center"
 	};
 
-	return <div style={style}>{props.character}</div>;
+	return (
+		<div style={style} onClick={props.clicked}>
+			{props.character}
+		</div>
+	);
 };
 
 export default CharComponent;
